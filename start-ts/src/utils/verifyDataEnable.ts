@@ -1,0 +1,3 @@
+function verifyDataEnable(data: any){
+  
+}
