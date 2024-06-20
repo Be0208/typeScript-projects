@@ -1,3 +1,3 @@
-const kinds: KindsType = ["TECH", "OUTROS", "DIVERSOS"]
+const kinds = ["TECH", "OUTROS", "DIVERSOS"]
   
 export default kinds;
