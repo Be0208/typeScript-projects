@@ -1,5 +1,4 @@
-import transformUpperText from "./transformUperText";
+import transformUpperText from "./transformUpperText";
+import veriFyDataEnable from "./verifyDataEnable";
 
-import verifyDataEnable from "./verifyDataEnable";
-
-export { verifyDataEnable, transformUpperText}
+export { transformUpperText, veriFyDataEnable };

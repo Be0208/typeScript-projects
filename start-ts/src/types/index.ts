@@ -1,5 +1,5 @@
-import CategoryType from "./Category";
-import ProductType from "./Products";
-import KindsType from "./kindsType";
+import CategoryType from "./CategoryType";
+import ProductType from "./ProductType";
+import KindsType from "./KindsType";
 
-export { ProductType, CategoryType, KindsType};
+export { CategoryType, ProductType, KindsType };

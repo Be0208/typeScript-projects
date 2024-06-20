@@ -1,7 +1,7 @@
 type CategoryType = {
   id: string;
   name: string;
-  enabled: boolean;
+  enable: boolean;
 } | null;
 
 export default CategoryType;

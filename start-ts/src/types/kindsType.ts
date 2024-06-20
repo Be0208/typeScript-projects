@@ -1,3 +1,3 @@
-type KindsType = "OUTROS" |  "TECH" |  "DIVERSOS" 
-  
+type KindsType = "OUTROS" | "DIVERSOS" | "TECH";
+
 export default KindsType;

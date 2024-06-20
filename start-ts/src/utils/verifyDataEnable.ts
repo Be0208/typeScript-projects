@@ -1,10 +1,11 @@
-function verifyDataEnable(data: any[]){
+function veriFyDataEnable(data: any[]) {
   const filtered = data.filter((item) => {
-    if(item.enabled == true) {
-      return item
-    } 
-  })
-  return filtered;
-};
+    if (item.enable) {
+      return item;
+    }
+  });
 
-export default verifyDataEnable;
+  return filtered;
+}
+
+export default veriFyDataEnable;

@@ -1,22 +1,33 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const uuid_1 = require("uuid");
-const transformUperText_1 = __importDefault(require("./utils/transformUperText"));
-const category = {
+var uuid_1 = require("uuid");
+var utils_1 = require("./utils");
+var category = {
     id: (0, uuid_1.v4)(),
-    name: "Tecnologia",
-    enabled: true,
+    name: "Geral",
+    enable: true,
 };
-const product = {
+var produto1 = {
     id: (0, uuid_1.v4)(),
-    name: 'Monitor ultraWide',
-    enabled: true,
-    kind: 'TECH',
-    description: 'monitor 29", tela ips, 144hz'
+    name: "Mouse",
+    enable: false,
+    kind: "TECH",
 };
-console.log(product);
-const test = (0, transformUperText_1.default)(product.name);
-console.log(test);
+var produto2 = {
+    id: (0, uuid_1.v4)(),
+    name: "Teclado",
+    enable: true,
+    kind: "TECH",
+};
+var produto3 = {
+    id: (0, uuid_1.v4)(),
+    name: "Monitor",
+    enable: true,
+    kind: "OUTROS",
+};
+var lista = [];
+lista.push(produto1);
+lista.push(produto2);
+lista.push(produto3);
+var listaAtivos = (0, utils_1.veriFyDataEnable)(lista);
+console.log(listaAtivos);
